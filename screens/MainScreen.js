@@ -62,8 +62,7 @@ const MainScreen = ({ navigation }) => {
           headers: { "Content-Type": "multipart/form-data" },
         }
       );
-      console.log(response.data);
-      // Handle response data...
+      navigation.navigate("Admin");
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -132,7 +131,7 @@ const MainScreen = ({ navigation }) => {
                   style={[styles.input, styles.descriptionInput]}
                   error={touched.description && errors.description}
                   multiline
-                  numberOfLines={4} // Adjust the number of lines as per your preference
+                  numberOfLines={4}
                 />
                 <HelperText
                   style={styles.errorMessage}
@@ -182,7 +181,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   descriptionInput: {
-    height: 100, // Adjust the height as per your preference
+    height: 100,
   },
   errorMessage: {
     marginBottom: 15,
