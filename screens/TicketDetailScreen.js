@@ -21,7 +21,7 @@ const TicketDetailScreen = ({ route }) => {
 
     try {
       const fetchResponse = await fetch(
-        `http://192.168.0.70:5000/api/tickets/${ticket._id}`,
+        `https://boiling-garden-12959-fce2b00bce97.herokuapp.com/api/tickets/${ticket._id}`,
         {
           method: "PUT",
           headers: {

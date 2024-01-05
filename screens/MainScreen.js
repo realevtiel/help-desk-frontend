@@ -56,7 +56,7 @@ const MainScreen = ({ navigation }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/tickets",
+        "https://boiling-garden-12959-fce2b00bce97.herokuapp.com/api/tickets",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

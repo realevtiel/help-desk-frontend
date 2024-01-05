@@ -15,7 +15,9 @@ const AdminScreen = ({ navigation }) => {
 
   const fetchTickets = async () => {
     try {
-      const response = await axios.get("http://192.168.0.70:5000/api/tickets");
+      const response = await axios.get(
+        "https://boiling-garden-12959-fce2b00bce97.herokuapp.com/api/tickets"
+      );
       setTickets(response.data);
     } catch (error) {
       console.error("Error fetching tickets:", error);
