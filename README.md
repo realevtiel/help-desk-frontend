@@ -1,4 +1,4 @@
-# React Native Expo Project
+# React Native Expo Help-Desk App
 
 ## Description
 This project is a cross-platform mobile application developed using React Native and Expo. It's designed to function on web, iOS, and Android platforms. The backend is crafted with Node.js and Express and is deployed on Heroku.
